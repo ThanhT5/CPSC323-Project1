@@ -26,4 +26,4 @@ This project implements a Deterministic Finite Automaton (DFA) that processes in
 ### Programs
 - **Prog1**: This program implements a Deterministic Finite Automaton (DFA) that processes input strings consisting of the characters 'a' and 'b'. It defines states, transitions, and accepts specific patterns. The main function allows users to input strings and checks if they are accepted by the DFA, displaying the transition table at the end.
 
-- **Prog2**: This program cleans a specified input file by removing unnecessary whitespace and comments. It processes each line, handles special cases (like `cin>>`), and writes the cleaned content to an output file. The main function specifies the input and output file names and executes the cleaning process.
+- **Prog2**: This program cleans a specified input file by removing unnecessary whitespace and comments. It processes each line, handles special cases (like `cin>>`), and writes the cleaned content to an output file. The main function specifies the input and output file names and executes the cleaning process
