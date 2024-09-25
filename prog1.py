@@ -36,12 +36,16 @@ def main():
     dfa = DFA()  # Create an instance of the DFA
     
     while True:
-        user_input = input("Enter a string (or 'quit' to exit): ")  # Get user input
+        user_input = input("Enter a statement: ")  # Get user input
         if user_input.lower() == 'quit':  # Check for exit condition
             break
         
         result = dfa.process_input(user_input.rstrip('$'))  # Process the input string
         print(f"Output: {result}")  # Output the result
+        
+        continue_input = input("CONTINUE(y/n)? ")  # Prompt to continue or exit
+        if continue_input.lower() != 'y':
+            break
     
     print("\nTransition Table:")  # Print the transition table
     for state, transitions in dfa.transitions.items():
