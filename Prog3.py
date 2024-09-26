@@ -79,6 +79,11 @@ def main():
         if user_input.lower() == 'quit':
             break
         
+        if len(user_input) > 255:
+                    print("Input truncated to 255 characters.")
+        # Truncate input to 255 characters
+        user_input = user_input[:255]
+
         lexemes = split_into_lexemes(user_input)  # Split the input into lexemes
         for lexeme in lexemes:
             lexeme_type = analyze_lexeme(lexeme)  # Analyze each lexeme
